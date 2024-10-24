@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circular Picture Frame</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              custom: ["MyCustomFont", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      body {
+        background-image: url("/theme/assets/bg_small.png");
+        background-repeat: repeat;
+        background-size: auto;
+      }
+
+      .banner-bg {
+        background-image: url("/theme/assets/banner_small.png");
+        background-repeat: repeat;
+        background-size: auto;
+      }
+      @font-face {
+        font-family: "MyCustomFont";
+        src: url("/theme/assets/QayyumBookMA.woff2") format("woff2"),
+          url("/theme/assets/QayyumBookMA.woff2") format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-100 min-h-screen flex flex-col bg-repeat font-custom">
+    <h1
+      class="text-2xl md:text-3xl text-white py-4 text-center font-custom banner-bg"
+    >
+      ইসলামি বইমেলা-২০২৪
+    </h1>
+
+    <section class="py-6 sm:py-16 lg:py-24">
+      <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-6xl">
+        <div class="flex flex-col items-center justify-center">
+          <div class="flex-1 text-center lg:text-left">
+            <h2
+              class="text-3xl text-center leading-tight text-black sm:text-4xl lg:text-5xl"
+            >
+              ফ্রেম পছন্দ করুন
+            </h2>
+            <p class="max-w-xl mx-auto mt-4 text-xl text-center text-gray-600">
+              ফ্রেম সিলেক্ট করে তৈরি করুন আপনার পছন্দের ছবিটি। ইসলামি
+              বইমেলা-২০২৪-এ আপনি আসুন এবং বন্ধুদের আহ্বান করুন
+            </p>
+          </div>
+
+          <div class="max-w-6xl mx-auto md:flex gap-10 mt-4 md:mt-12">
+            <div class="">
+              <a
+                href="/theme/light-theme.html"
+                class="overflow-hidden bg-white rounded shadow block hover:bg-gray-100 transition duration-300"
+              >
+                <div class="p-5">
+                  <div class="relative">
+                    <img
+                      class="object-cover w-full h-full aspect-w-4 aspect-h-3"
+                      src="/theme/assets/Islamic-bookfair-24.png"
+                      alt=""
+                    />
+                    <div class="absolute top-4 left-4">
+                      <span
+                        class="px-4 py-2 text-xs font-semibold tracking-widest text-gray-900 uppercase bg-white rounded-full"
+                      >
+                        light
+                      </span>
+                    </div>
+                  </div>
+                  <span
+                    class="block mt-6 text-sm tracking-widest text-gray-500 uppercase"
+                  >
+                    ২২ অক্টোবর থেকে ১০ নভেম্বর
+                  </span>
+                  <p class="mt-2 text-2xl text-gray-600">ইসলামি বইমেলা-২০২৪</p>
+                </div>
+              </a>
+            </div>
+            <!-- dark theme -->
+            <div class="mt-8 md:mt-0">
+              <a
+                href="theme/dark.html"
+                class="overflow-hidden bg-white rounded shadow block hover:bg-gray-100 transition duration-300"
+              >
+                <div class="p-5">
+                  <div class="relative">
+                    <img
+                      class="object-cover w-full h-full aspect-w-4 aspect-h-3"
+                      src="/theme/assets/Islamic-bookfair-dark.png"
+                      alt=""
+                    />
+                    <div class="absolute top-4 left-4">
+                      <span
+                        class="px-4 py-2 text-xs font-semibold tracking-widest text-gray-900 uppercase bg-white rounded-full"
+                      >
+                        dark
+                      </span>
+                    </div>
+                  </div>
+                  <span
+                    class="block mt-6 text-sm tracking-widest text-gray-500 uppercase"
+                  >
+                    ২২ অক্টোবর থেকে ১০ নভেম্বর
+                  </span>
+                  <p class="mt-2 text-2xl text-gray-600">ইসলামি বইমেলা-২০২৪</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div
+        class="w-full text-center text-sm md:text-xl font-light py-4 pb-28 mt-auto text-gray-400"
+      >
+        developed by
+        <a
+          class="text-[#B69E72]"
+          href="https://www.facebook.com/ferdousmikdad/"
+          target="_blank"
+          >ferdous mikdad</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>
